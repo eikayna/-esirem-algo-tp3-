@@ -54,6 +54,20 @@ int main() {
     printf("Solution 2: Type=%d, x1=%.2f, x2=%.2f\n", solution2.type, solution2.x1, solution2.x2);
     return 0;
 }
-
-
-  
+1.3 Création des tests unitaires
+void test() {
+    struct SSTRUCTURE_FONCTION solutions[] = {
+        {NONE}
+        {ONE, x1},
+        {TWO, x1, x2},
+    };
+    for (int i = 0; i < sizeof(solutions)); ++i) {
+        printf("Test %d:\n", i + 1);
+        showSolution(solutions[i]);
+        printf("\n");
+    }
+}
+int main() {
+    test();
+    return 0;
+}
