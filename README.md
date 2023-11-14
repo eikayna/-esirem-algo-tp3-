@@ -12,3 +12,16 @@ Fonction showSolution(solution):
        Fin Si
     Fin 
 Fin Fonction
+1.4-Fonction de résolution de premier degré
+Fonction resolveOne(a, b):
+    Debut 
+    PARAM entier a
+    PARAM entier b
+        Si a est égal à 0 Alors
+           Afficher "aucune resultat" 
+        Sinon
+           Solution <- -b / a
+           Afficher "Solution"
+        Fin Si
+    Fin 
+Fin Fonction
